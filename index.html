@@ -565,6 +565,63 @@
       .portfolio-credential p { margin: 0; color: var(--gray); font-size: .72rem; }
       @media (max-width: 760px) { .portfolio-metrics { grid-template-columns: 1fr 1fr; }.portfolio-metric:nth-child(2) { border-right: 0; }.portfolio-credentials { grid-template-columns: 1fr; gap: 0; padding-top: 35px; } }
       @media (max-width: 760px) { .portfolio-page > .portfolio-wrap:first-child { background: #ffffff; } }
+
+      /* Dopetrope-inspired portfolio treatment */
+      body:has(.portfolio-page) { background: #dfe1e3; color: #303238; font-family: 'Source Sans Pro', 'Trebuchet MS', Arial, sans-serif; }
+      .portfolio-page { --black: #303238; --cream: #ffffff; --accent: #c9473d; --gray: #777b82; --rule: #d6d8db; --soft: #f4f4f4; background: transparent; color: var(--black); }
+      .portfolio-page > .portfolio-wrap:first-child { position: static; width: 100%; padding: 0; background: transparent; border: 0; }
+      .portfolio-page > main, .portfolio-page > footer { margin-left: 0; }
+      .portfolio-wrap { width: min(1150px, calc(100% - 40px)); }
+      .portfolio-nav { min-height: 94px; display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 0; border: 0; }
+      .portfolio-logo { margin: 0; color: #25262b; font: 700 2rem/1 'Source Sans Pro', Arial, sans-serif; letter-spacing: -.05em; }
+      .portfolio-logo span { color: var(--accent); }
+      .portfolio-nav-links { display: flex; flex-direction: row; gap: 5px; color: #555961; font-size: .78rem; letter-spacing: 0; text-transform: none; }
+      .portfolio-nav-links a { padding: 10px 15px; border: 0; border-radius: 5px; }
+      .portfolio-nav-links a:hover { color: #fff; background: var(--accent); }
+      .portfolio-status { color: var(--gray); font-size: .72rem; }
+      .portfolio-status::before { width: 8px; height: 8px; background: #67b889; }
+      .portfolio-hero { padding: 84px 0; background: #b9bec3; border: 0; text-align: center; }
+      .portfolio-hero::after { display: none; }
+      .portfolio-kicker { color: #5e646b; font-size: .72rem; letter-spacing: .12em; }
+      .portfolio-hero h1 { max-width: 100%; margin: 16px 0 17px; color: #25262b; font-size: clamp(3rem, 6vw, 5.8rem); line-height: .95; letter-spacing: -.055em; }
+      .portfolio-hero h1 em { color: var(--accent); }
+      .portfolio-hero-bottom { display: block; }
+      .portfolio-hero-intro { max-width: 540px; margin: 0 auto; color: #545a61; font-size: 1rem; line-height: 1.7; }
+      .portfolio-scroll { display: inline-block; margin-top: 25px; color: var(--accent); font-size: .7rem; letter-spacing: .1em; }
+      .portfolio-metrics { width: min(1150px, calc(100% - 40px)); margin: -28px auto 0; position: relative; z-index: 1; background: #fff; border: 1px solid #d0d3d6; box-shadow: 0 5px 0 rgba(48,50,56,.07); }
+      .portfolio-metric { padding: 20px; text-align: center; }
+      .portfolio-metric strong { font-size: 1.8rem; }
+      .portfolio-section { padding: 72px 0; border-bottom: 0; }
+      .portfolio-section:nth-of-type(even) { background: transparent; }
+      .portfolio-section-header { align-items: center; margin-bottom: 28px; }
+      .portfolio-section-title { color: #303238; font-size: clamp(2.3rem, 4vw, 3.6rem); letter-spacing: -.04em; }
+      .portfolio-section-number { color: var(--accent); font-size: .7rem; }
+      .portfolio-about-card { padding: 22px; background: #fff; border: 1px solid #d0d3d6; box-shadow: 0 4px 0 rgba(48,50,56,.06); }
+      .portfolio-work-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 28px; }
+      .portfolio-work, .portfolio-work:nth-child(2), .portfolio-work:nth-child(3) { min-height: 390px; padding: 22px; border: 1px solid #d0d3d6; box-shadow: 0 4px 0 rgba(48,50,56,.06); }
+      .portfolio-work:nth-child(3) { grid-column: auto; }
+      .portfolio-work::before { opacity: .72; }
+      .portfolio-work h3 { font-size: 2.15rem; }
+      .portfolio-work-meta { font-size: .62rem; }
+      .portfolio-work-link { color: var(--accent); }
+      .portfolio-expertise { background: #fff; border: 1px solid #d0d3d6; }
+      .portfolio-expertise-item strong { color: var(--accent); }
+      .portfolio-approach { padding: 0; }
+      .portfolio-approach h2 { color: #303238; font-size: clamp(2.4rem, 4vw, 4rem); }
+      .portfolio-approach h2 em { color: var(--accent); }
+      .portfolio-principle strong { color: #303238; }
+      .portfolio-services { background: #fff; border-top: 1px solid #d0d3d6; border-bottom: 1px solid #d0d3d6; }
+      .portfolio-service-list { border-top-color: #d0d3d6; }
+      .portfolio-service { border-bottom-color: #d0d3d6; }
+      .portfolio-service h3 { color: #303238; font-size: 1.7rem; }
+      .portfolio-process-item { border-color: #d0d3d6; box-shadow: 0 4px 0 rgba(48,50,56,.06); }
+      .portfolio-process-item h3 { color: #303238; }
+      .portfolio-contact { padding: 82px 0; background: #b9bec3; text-align: center; }
+      .portfolio-contact h2 { max-width: 750px; margin: 18px auto 25px; color: #25262b; font-size: clamp(3rem, 6vw, 5.8rem); }
+      .portfolio-contact h2 em { color: var(--accent); }
+      .portfolio-email { color: var(--accent); font-size: 1.1rem; }
+      .portfolio-footer { margin: 0; background: #303238; color: #c6c9cd; border: 0; }
+      @media (max-width: 760px) { .portfolio-wrap { width: min(100% - 28px, 600px); }.portfolio-nav { min-height: 76px; }.portfolio-logo { font-size: 1.7rem; }.portfolio-status { display: none; }.portfolio-nav-links { gap: 0; }.portfolio-nav-links a { padding: 8px 6px; font-size: .68rem; }.portfolio-hero { padding: 62px 0 72px; }.portfolio-metrics { width: calc(100% - 28px); }.portfolio-section { padding: 55px 0; }.portfolio-about-card { grid-template-columns: 1fr; }.portfolio-work-grid { grid-template-columns: 1fr; }.portfolio-work, .portfolio-work:nth-child(2), .portfolio-work:nth-child(3) { min-height: 310px; }.portfolio-work:nth-child(3) { grid-column: auto; }.portfolio-approach { gap: 35px; }.portfolio-contact { padding: 65px 0 75px; } }
     </style>
   </head>
   <body>
@@ -574,10 +631,11 @@
       </div>
       <main id="portfolio-top">
         <section class="portfolio-hero"><div class="portfolio-wrap"><div class="portfolio-kicker">Independent designer &amp; developer / 2026</div><h1>Make it<br /><em>matter.</em></h1><div class="portfolio-hero-bottom"><p class="portfolio-hero-intro">Nadia Swarts creates digital experiences for people, brands, and ideas worth paying attention to.</p><a class="portfolio-scroll" href="#portfolio-work">Scroll to explore ↓</a></div></div></section>
+        <div class="portfolio-metrics"><div class="portfolio-wrap" style="display: contents"><div class="portfolio-metric"><strong>4+</strong><span>Years building</span></div><div class="portfolio-metric"><strong>18</strong><span>Projects shipped</span></div><div class="portfolio-metric"><strong>100%</strong><span>Curious</span></div><div class="portfolio-metric"><strong>∞</strong><span>Things to learn</span></div></div></div>
         <section class="portfolio-section" id="portfolio-about"><div class="portfolio-wrap"><div class="portfolio-section-header"><h2 class="portfolio-section-title">A little about me</h2><span class="portfolio-section-number">Profile</span></div><div class="portfolio-about-card"><img class="portfolio-profile-image" src="nadia-profile.jpg" alt="Portrait of Nadia Swarts" /><div><h3>Hi, I’m Nadia.<br />I make the web feel more human.</h3><p>I’m a front-end developer and digital designer based in the Netherlands. I enjoy turning thoughtful ideas into polished, accessible experiences, and I’m happiest when I’m learning something new with a good team.</p><div class="portfolio-about-details"><span><strong>Based in</strong>Netherlands</span><span><strong>Specialising in</strong>Front-end &amp; UX</span><span><strong>Outside work</strong>Music, film, coffee</span></div></div></div></div></section>
         <section class="portfolio-section" id="portfolio-work"><div class="portfolio-wrap"><div class="portfolio-section-header"><h2 class="portfolio-section-title">Selected work</h2><span class="portfolio-section-number">01 — 03</span></div><div class="portfolio-filter" role="group" aria-label="Filter projects"><button class="active" type="button" data-filter="all">All work</button><button type="button" data-filter="development">Development</button><button type="button" data-filter="design">Design</button></div><div class="portfolio-work-grid"><article class="portfolio-work" data-category="development"><div class="portfolio-work-content"><div class="portfolio-work-meta"><span>01 / Digital platform</span><span>2025</span></div><h3>Climate data,<br />made human.</h3><p>An approachable data platform for exploring local climate change, built for clarity and curiosity.</p><a class="portfolio-work-link" href="#portfolio-contact">View case study ↗</a></div></article><article class="portfolio-work" data-category="design"><div class="portfolio-work-content"><div class="portfolio-work-meta"><span>02 / E-commerce</span><span>2024</span></div><h3>Soft goods,<br />strong story.</h3><p>An editorial storefront for an independent homeware studio.</p><a class="portfolio-work-link" href="#portfolio-contact">View case study ↗</a></div></article><article class="portfolio-work" data-category="design"><div class="portfolio-work-content"><div class="portfolio-work-meta"><span>03 / Community</span><span>2024</span></div><h3>A place to find your people.</h3><p>Brand, product, and digital experience for a creative community that refuses to stand still.</p><a class="portfolio-work-link" href="#portfolio-contact">View case study ↗</a></div></article></div><div class="portfolio-expertise"><div class="portfolio-expertise-item"><strong>Frontend</strong><span>HTML, CSS, JavaScript, React</span></div><div class="portfolio-expertise-item"><strong>Design systems</strong><span>Components, tokens, documentation</span></div><div class="portfolio-expertise-item"><strong>Accessibility</strong><span>Inclusive patterns and testing</span></div><div class="portfolio-expertise-item"><strong>Performance</strong><span>Fast, responsive experiences</span></div></div></div></section>
         <section class="portfolio-section" id="portfolio-approach"><div class="portfolio-wrap portfolio-approach"><h2>Good work lives between <em>feeling</em> and function.</h2><div><p class="portfolio-approach-copy">I work across design and development to make digital things that feel considered from the first glance to the last click. The process is collaborative, direct, and always grounded in the people who will use the result.</p><div class="portfolio-principles"><div class="portfolio-principle"><strong>Make it clear</strong><span>Less noise. More meaning.</span></div><div class="portfolio-principle"><strong>Make it useful</strong><span>Beauty with a purpose.</span></div><div class="portfolio-principle"><strong>Make it last</strong><span>Built for the long view.</span></div><div class="portfolio-principle"><strong>Make it together</strong><span>Better ideas, shared early.</span></div></div></div></div></section>
-        <section class="portfolio-section"><div class="portfolio-wrap"><div class="portfolio-section-header"><h2 class="portfolio-section-title">How I work</h2><span class="portfolio-section-number">Process</span></div><div class="portfolio-process"><div class="portfolio-process-item"><span class="portfolio-process-number">01</span><h3>Discover</h3><p>Understand the problem, audience, and opportunity.</p></div><div class="portfolio-process-item"><span class="portfolio-process-number">02</span><h3>Define</h3><p>Shape a focused direction and practical plan.</p></div><div class="portfolio-process-item"><span class="portfolio-process-number">03</span><h3>Build</h3><p>Design and develop in small, useful iterations.</p></div><div class="portfolio-process-item"><span class="portfolio-process-number">04</span><h3>Refine</h3><p>Test, tune, and prepare the work for launch.</p></div></div></div></section>
+        <section class="portfolio-section"><div class="portfolio-wrap"><div class="portfolio-section-header"><h2 class="portfolio-section-title">How I work</h2><span class="portfolio-section-number">Process</span></div><div class="portfolio-process"><div class="portfolio-process-item"><span class="portfolio-process-number">01</span><h3>Discover</h3><p>Understand the problem, audience, and opportunity.</p></div><div class="portfolio-process-item"><span class="portfolio-process-number">02</span><h3>Define</h3><p>Shape a focused direction and practical plan.</p></div><div class="portfolio-process-item"><span class="portfolio-process-number">03</span><h3>Build</h3><p>Design and develop in small, useful iterations.</p></div><div class="portfolio-process-item"><span class="portfolio-process-number">04</span><h3>Refine</h3><p>Test, tune, and prepare the work for launch.</p></div></div><div class="portfolio-credentials"><div class="portfolio-credential"><small>Education</small><h3>Computer Science &amp; Digital Design</h3><p>Building a strong foundation across code, systems, and visual communication.</p></div><div class="portfolio-credential"><small>Currently exploring</small><h3>Motion, accessibility, and design systems</h3><p>Always making room for the next useful question.</p></div></div></div></section>
         <section class="portfolio-section portfolio-services" id="portfolio-services"><div class="portfolio-wrap"><div class="portfolio-section-header"><h2 class="portfolio-section-title">What I do</h2><span class="portfolio-section-number">Capabilities</span></div><div class="portfolio-service-list"><div class="portfolio-service"><span class="portfolio-service-index">01</span><h3>Digital direction</h3><p>Finding the sharpest expression for an idea, from strategy through visual language.</p><span class="portfolio-service-arrow">↗</span></div><div class="portfolio-service"><span class="portfolio-service-index">02</span><h3>Web design</h3><p>Interfaces with rhythm, purpose, and just enough surprise to stay memorable.</p><span class="portfolio-service-arrow">↗</span></div><div class="portfolio-service"><span class="portfolio-service-index">03</span><h3>Front-end build</h3><p>Fast, accessible, responsive websites that work as beautifully as they look.</p><span class="portfolio-service-arrow">↗</span></div></div></div></section>
         <section class="portfolio-contact" id="portfolio-contact"><div class="portfolio-wrap"><div class="portfolio-kicker">Have a project in mind?</div><h2>Let's make<br /><em>something good.</em></h2><a class="portfolio-email" href="mailto:hello@nadiasswarts.dev">hello@nadiasswarts.dev ↗</a></div></section>
       </main>
