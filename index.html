@@ -566,6 +566,12 @@
       @media (max-width: 760px) { .portfolio-metrics { grid-template-columns: 1fr 1fr; }.portfolio-metric:nth-child(2) { border-right: 0; }.portfolio-credentials { grid-template-columns: 1fr; gap: 0; padding-top: 35px; } }
       @media (max-width: 760px) { .portfolio-page > .portfolio-wrap:first-child { background: #ffffff; } }
 
+      /* Final blue accent palette */
+      .portfolio-page { --accent: #2563b8; }
+      .portfolio-work:nth-child(2) { background: #dce9f6; }
+      .portfolio-work:nth-child(2)::before { background: #9cbddd; }
+      .portfolio-work:hover { box-shadow: 8px 8px 0 rgba(37,99,184,.22); }
+
       /* Dopetrope-inspired portfolio treatment */
       body:has(.portfolio-page) { background: #dfe1e3; color: #303238; font-family: 'Source Sans Pro', 'Trebuchet MS', Arial, sans-serif; }
       .portfolio-page { --black: #303238; --cream: #ffffff; --accent: #c9473d; --gray: #777b82; --rule: #d6d8db; --soft: #f4f4f4; background: transparent; color: var(--black); }
