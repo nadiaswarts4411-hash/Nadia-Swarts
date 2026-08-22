@@ -529,6 +529,42 @@
       .portfolio-contact h2 { font-size: clamp(3rem, 6vw, 6rem); }
       .portfolio-footer { margin-left: 245px; }
       @media (max-width: 760px) { .portfolio-page > .portfolio-wrap:first-child { position: static; width: auto; padding: 0 15px; border-right: 0; border-bottom: 1px solid var(--rule); }.portfolio-page > main, .portfolio-page > footer { margin-left: 0; }.portfolio-nav { min-height: 70px; padding: 0; flex-direction: row; align-items: center; }.portfolio-logo { margin: 0; }.portfolio-status { margin: 0; }.portfolio-hero::after { width: 90px; height: 90px; top: 100px; right: 8%; }.portfolio-about-card { grid-template-columns: 1fr; }.portfolio-profile-image { height: 310px; }.portfolio-work-grid { grid-template-columns: 1fr; }.portfolio-work:nth-child(3) { grid-column: auto; }.portfolio-process { grid-template-columns: 1fr 1fr; } }
+
+      /* Light professional polish */
+      .portfolio-page { --black: #20303d; --cream: #ffffff; --accent: #d8846c; --gray: #6d7d89; --rule: #d8e1e8; --soft: #edf4f8; background: #f5f8fa; color: var(--black); }
+      .portfolio-page > .portfolio-wrap:first-child { background: #ffffff; border-right-color: var(--rule); }
+      .portfolio-hero { background: #ffffff; border-bottom-color: var(--rule); }
+      .portfolio-hero::after { border-color: rgba(216,132,108,.45); }
+      .portfolio-section { border-bottom-color: var(--rule); }
+      .portfolio-section:nth-of-type(even) { background: #ffffff; }
+      .portfolio-work { box-shadow: 0 12px 30px rgba(32,48,61,.08); }
+      .portfolio-work:nth-child(1) { background: #dfeaf1; }
+      .portfolio-work:nth-child(1)::before { background: #b4cbd9; }
+      .portfolio-work:nth-child(2) { background: #f4d6ca; }
+      .portfolio-work:nth-child(2)::before { background: #dd9d87; }
+      .portfolio-work:nth-child(3) { background: #e8e6f1; }
+      .portfolio-work:nth-child(3)::before { background: #b2aecf; }
+      .portfolio-work:hover { box-shadow: 8px 8px 0 rgba(216,132,108,.25); }
+      .portfolio-about-card { background: #eaf2f6; box-shadow: 0 12px 28px rgba(32,48,61,.06); }
+      .portfolio-process-item, .portfolio-process-item:nth-child(even) { background: #ffffff; border-color: var(--rule); box-shadow: 0 8px 22px rgba(32,48,61,.05); }
+      .portfolio-process-item h3 { color: var(--black); }
+      .portfolio-process-item p { color: var(--gray); }
+      .portfolio-services { background: #ffffff; }
+      .portfolio-contact { background: #e8f1f5; }
+      .portfolio-footer { background: #f5f8fa; border-top-color: var(--rule); }
+      .portfolio-expertise-item strong, .portfolio-process-number, .portfolio-service-index, .portfolio-service-arrow { color: var(--accent); }
+      .portfolio-metrics { display: grid; grid-template-columns: repeat(4, 1fr); background: #f5f8fa; border-bottom: 1px solid var(--rule); }
+      .portfolio-metric { padding: 25px 20px; border-right: 1px solid var(--rule); }
+      .portfolio-metric:last-child { border-right: 0; }
+      .portfolio-metric strong { display: block; margin-bottom: 4px; font: 600 2.1rem 'Cormorant Garamond', Georgia, serif; color: var(--accent); }
+      .portfolio-metric span { color: var(--gray); font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; }
+      .portfolio-credentials { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; padding: 58px 0 0; }
+      .portfolio-credential { padding: 23px 0; border-top: 1px solid var(--rule); }
+      .portfolio-credential small { display: block; margin-bottom: 8px; color: var(--accent); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
+      .portfolio-credential h3 { margin: 0 0 5px; font: 500 1.45rem 'Cormorant Garamond', Georgia, serif; }
+      .portfolio-credential p { margin: 0; color: var(--gray); font-size: .72rem; }
+      @media (max-width: 760px) { .portfolio-metrics { grid-template-columns: 1fr 1fr; }.portfolio-metric:nth-child(2) { border-right: 0; }.portfolio-credentials { grid-template-columns: 1fr; gap: 0; padding-top: 35px; } }
+      @media (max-width: 760px) { .portfolio-page > .portfolio-wrap:first-child { background: #ffffff; } }
     </style>
   </head>
   <body>
